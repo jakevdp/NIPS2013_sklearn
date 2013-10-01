@@ -1,4 +1,4 @@
-NIPS2013_sklearn
-================
+Scikit-Learn - NIPS 2013 MLOSS Workshop
+=======================================
 
-Abstract for NIPS 2013
+1-page abstract presenting Scikit-Learn for NIPS 2013 MLOSS Workshop.
