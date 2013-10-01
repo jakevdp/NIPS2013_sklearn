@@ -49,19 +49,18 @@ style consistency and unit-test coverage. Documentation and examples are
 required for all features, and major changes must pass code review by at least
 two developers not involved in the implementation of the proposed change.
 
-All algorithms within \sklearn are offered through a simple, non-intrusive and
-elegant API~\citep{buitinck2013api} consisting of a limited set of methods. Its
-consistency across the package makes it very usable in practice:
-experimenting with different learning algorithm is as simple as substituting a
-class definition. Through composition interfaces, the library also offers
-powerful mechanisms to express a wide variety of learning tasks within a small
-amount of easy-to-read code. Finally, through duck-typing, the consistent API
-leads to a library that is easily extensible, and allows user-defined
-estimators to be incorporated into the \sklearn workflow without any explicit
-object inheritance.
-% In particular, the power and extensibility of the \sklearn
-% API is evidenced by its large and growing user-base as well as the appearance
-% of third-party packages that follow our conventions.
+All algorithms within \sklearn are offered through a simple and non-intrusive
+API~\citep{buitinck2013api} consisting of a limited set of methods. Its
+consistency across the package makes it very usable in practice: experimenting
+with different learning algorithm is as simple as substituting a class
+definition. Through composition interfaces, the library also offers powerful
+mechanisms to express a wide variety of learning tasks within a small amount of
+easy-to-read code. Finally, through duck-typing, the consistent API leads to a
+library that is easily extensible, and allows user-defined estimators to be
+incorporated into the \sklearn workflow without any explicit object
+inheritance. % In particular, the power and extensibility of the \sklearn % API
+% is evidenced by its large and growing user-base as well as the appearance % of
+% third-party packages that follow our conventions.
 
 \section*{Integration in the Python ecosystem}
 
