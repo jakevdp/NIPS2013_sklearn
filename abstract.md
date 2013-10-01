@@ -26,7 +26,7 @@ References
   http://jmlr.org/papers/v12/pedregosa11a.html
 - Buitinck et al. “API design for machine learning software: experiences from the scikit-learn project”.
   ECML (2013)
-  http://dtai.cs.kuleuven.be/lml/
+  http://orbi.ulg.ac.be/bitstream/2268/154357/1/paper.pdf
 
 Links
 -----
