@@ -5,8 +5,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[numbers,square]{natbib}
 \usepackage{xspace}
-\usepackage{natbib}
 \usepackage{url}
 
 \newcommand{\sklearn}{\textit{scikit-learn}\xspace}
@@ -49,7 +49,7 @@ style consistency and unit-test coverage. Documentation and examples are
 required for all features, and major changes must pass code review by at least
 two developers not involved in the implementation of the proposed change.
 
-All algorithms within \sklearn are offered through a simple and non-intrusive
+All algorithms within \sklearn are offered through a simple and elegant
 API~\citep{buitinck2013api} consisting of a limited set of methods. Its
 consistency across the package makes it very usable in practice: experimenting
 with different learning algorithm is as simple as substituting a class
@@ -58,20 +58,26 @@ mechanisms to express a wide variety of learning tasks within a small amount of
 easy-to-read code. Finally, through duck-typing, the consistent API leads to a
 library that is easily extensible, and allows user-defined estimators to be
 incorporated into the \sklearn workflow without any explicit object
-inheritance. % In particular, the power and extensibility of the \sklearn % API
-% is evidenced by its large and growing user-base as well as the appearance % of
-% third-party packages that follow our conventions.
+inheritance.
+
 
 \section*{Integration in the Python ecosystem}
 
 The library has been designed to leverage standard tools of the scientific
-Python ecosystem, including NumPy~\citep{vanderwalt2011} for efficient  storage
-and manipulation of multi-dimensional arrays, SciPy~\citep{varoquaux2013scipy}
-for more specialized data structures  (e.g. sparse matrices) and
-implementations of lower-level scientific algorithms, and Matplotlib for
-dynamic data visualization in two and three dimensions.
+Python ecosystem, including NumPy~\citep{vanderwalt2011} for efficient storage
+and manipulation of multi-dimensional arrays and
+SciPy~\citep{oliphant2007python} for more specialized data structures  (e.g.
+sparse matrices) and implementations of lower-level scientific algorithms.
+Designed to avoid the proliferation of framework code, its limited and
+non-intrusive API makes \sklearn easy to use and easy to combine with other
+libraries. Together with IPython~\citep{perez2007ipython} for interactive exploration and Matplotlib~\citep{hunter2007matplotlib} for
+dynamic data vizualisation, NumPy and SciPy constitute a comprehensive
+scientific working environment that \sklearn indeed smoothly complements with a host of
+machine learning algorithms and data analysis routines.
 
-(todo)
+% In particular, the power and extensibility of the \sklearn API is
+% evidenced by its large and growing user-base as well as the appearance of
+% third-party packages that follow our conventions.
 
 
 \section*{Demonstrations}
@@ -85,6 +91,7 @@ popular algorithms in \sklearn.
 {\small
 \bibliographystyle{abbrvnat}
 \DeclareRobustCommand{\VAN}[3]{#3}
+\setlength{\bibsep}{1mm}
 \bibliography{sklearn-nips-mloss}
 }
 
