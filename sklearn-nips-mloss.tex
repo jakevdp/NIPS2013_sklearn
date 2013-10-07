@@ -36,7 +36,7 @@ primary aim of the project is to provide a compendium of efficient
 implementations of classic, well-established  machine learning algorithms.
 Among other things, it includes classical supervised and unsupervised learning
 algorithms, tools for model evaluation and selection, as well as tools for
-preprocessing and feature engineering. \sklearn is distributed under the
+data preprocessing and feature engineering. \sklearn is distributed under the
 3-clause  BSD license, encouraging its free use in both commercial and academic
 settings.
 
@@ -51,8 +51,8 @@ are required for all features, and major changes must pass code review by
 developers not involved in the proposed change.
 
 All algorithms within \sklearn are offered through a simple and elegant
-API~\citep{buitinck2013api} consisting of a well-defined set of methods. Its
-consistency across the package makes it very usable in practice: experimenting
+API~\citep{buitinck2013api} consisting of a well-defined set of methods.
+This API consistency across the package makes it very usable in practice: experimenting
 with different learning algorithm is as simple as substituting a class
 definition. Through composition interfaces, the library also offers powerful
 mechanisms to express a wide variety of learning tasks within a small amount of
@@ -69,8 +69,9 @@ scientific Python ecosystem. In particular, \sklearn leverages
 NumPy~\citep{vanderwalt2011} for efficient storage and manipulation of
 multi-dimensional arrays, and SciPy~\citep{oliphant2007python} for more specialized
 data structures  (e.g. sparse matrices) and implementations of lower-level
-scientific algorithms. Designed to avoid the proliferation of framework code,
-its limited and non-intrusive API also makes \sklearn easy to use and easy to
+scientific algorithms. The scikit-learn API is designed to avoid the
+proliferation of framework code: it is
+limited and non-intrusive. As such it makes \sklearn easy to use and easy to
 combine with other libraries. Together with IPython~\citep{perez2007ipython}
 for interactive exploration and Matplotlib~\citep{hunter2007matplotlib} for
 dynamic data visualization, NumPy and SciPy constitute a comprehensive
